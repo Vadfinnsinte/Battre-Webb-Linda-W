@@ -13,7 +13,7 @@ body {
 	flex-direction: row;
 	gap: 2em;
 	font-size: 20px;
-	/* width: 100%; */
+	/* width: 99vw; */
 }
 
 .dropdown {
@@ -26,6 +26,7 @@ body {
 .hidden-nav a {
 	display: block;
 	margin-bottom: 0.5em;
+	
 }
 .dropdown:hover .hidden-nav {
 	display: block;
@@ -44,12 +45,15 @@ body {
 .start-sida {
 	display: flex;
 	flex-direction: column;
-	/* justify-content: center; */
+	justify-content: center;
 	align-items: center;
+	background-color: #C0A8D3;
 }
 .background-img {
-	width: 100%;
+	width: 90vw;
 	/* filter: blur(1px); */
+	/* box-shadow: 3px 3px 4px 4px #270742; */
+	/* border: 1.5em solid #270742; */
 }
 .hälsning {
 	position: absolute;
