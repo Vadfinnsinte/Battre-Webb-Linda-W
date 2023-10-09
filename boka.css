@@ -1,24 +1,24 @@
 * {
 	text-decoration: none;
 	margin: 0;
-	box-sizing: border-box;
 	color: #270742;
 }
 :root {
 	--bg-color: #D9D9D9;
+	--main-color: #bdaccab0;
 }
 body {
-	background-color: #bdaccab0;
-	
+	background-color: var(--main-color);
 }
 .header {
 	background-color: #C0A8D3;
-	padding: 2em;
+	padding: 1.5em;
+	/* opacity: 75%; */
 	display: flex;
 	flex-direction: row;
 	gap: 2em;
 	font-size: 18px;
-	
+	/* width: 99vw; */
 }
 
 .dropdown {
@@ -31,6 +31,7 @@ body {
 .hidden-nav a {
 	display: block;
 	margin-bottom: 0.5em;
+	
 }
 .dropdown:hover .hidden-nav {
 	display: block;
@@ -42,59 +43,27 @@ body {
 .header a:hover {
 	color: #270742;
 	font-weight: bolder;
-	/* font-size: 18px; */
-	
+	/* font-size: 18px; */	
 }
-/* Seminarie sidan börjar */
-
-.seminarie {
-	margin-top: 3em;
-	/* display: flex;
-	flex-direction: column; */
+/* Biljetter börjar */
+.boka {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 3em;
-	align-items: center;
-	justify-content: center;
-	margin: 2em;
+	grid-template-rows: 1fr;
 }
-
-.seminarie > * {
+.boka > * {
+	margin: 4em;
 	/* border: 2px solid #270742; */
-	align-items: center;
-	justify-content: center;
+	height: 50vh;
 	background-color: var(--bg-color);
 	padding: 2em;
 	border-radius: 10px;
 	box-shadow: 2px 3px 10px #270742;
 }
-.img-headshot {
-	width: 10vw;
-}
-
-.seminarie p {
-	margin-top: 8px;
-}
 
 
-@media (max-width: 800px) {
-	.seminarie {
-		display: flex;
-		flex-direction: column;
-		flex-grow: 1;
-	}
-	.sidebar {
-		display: none;
-	}
-}
 
 @media (max-width: 422px) {
 	.header {
 		gap: 1em;
-	}
-}
-@media (max-width: 768px) {
-	.img-headshot {
-		display: none;
 	}
 }
