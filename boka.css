@@ -9,6 +9,7 @@
 }
 body {
 	background-color: var(--main-color);
+	font-family: 'Nunito', sans-serif;
 }
 .header {
 	background-color: #C0A8D3;
@@ -19,6 +20,8 @@ body {
 	gap: 2em;
 	font-size: 18px;
 	/* width: 99vw; */
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
 }
 
 .dropdown {
@@ -35,15 +38,16 @@ body {
 }
 .dropdown:hover .hidden-nav {
 	display: block;
-	background-color: #D9D9D9; 
+	background-color: #b89dce; 
 	padding: 0.5em;
-	width: 6em;
+	width: 15em;
 	border-radius: 1em;
 }
 .header a:hover {
 	color: #270742;
 	font-weight: bolder;
-	/* font-size: 18px; */	
+	/* font-size: 18px; */
+	font-weight: 700;
 }
 /* Biljetter börjar */
 .boka {
@@ -59,7 +63,14 @@ body {
 	border-radius: 10px;
 	box-shadow: 2px 3px 10px #270742;
 }
-
+.alladagar {
+	display: flex;
+	/* grid-template-columns: 1fr 1fr; */
+	margin-top: 2em;
+	background-color: rgb(244, 239, 250);
+	padding: 2em;
+	border-radius: 10px;
+}
 
 
 @media (max-width: 422px) {
