@@ -14,14 +14,13 @@ body {
 .header {
 	background-color: #C0A8D3;
 	padding: 1.5em;
-	/* opacity: 75%; */
 	display: flex;
 	flex-direction: row;
 	gap: 2em;
 	font-size: 18px;
-	/* width: 99vw; */
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
+	
 }
 
 .dropdown {
@@ -56,21 +55,38 @@ body {
 }
 .boka > * {
 	margin: 4em;
-	/* border: 2px solid #270742; */
-	height: 50vh;
+	height: 60vh;
 	background-color: var(--bg-color);
 	padding: 2em;
 	border-radius: 10px;
 	box-shadow: 2px 3px 10px #270742;
+	overflow: auto;
 }
-.alladagar {
-	display: flex;
-	/* grid-template-columns: 1fr 1fr; */
+/* .form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 	margin-top: 2em;
 	background-color: rgb(244, 239, 250);
 	padding: 2em;
 	border-radius: 10px;
+	gap: 1em;
 }
+
+.info input {
+	display: flex;
+	flex-grow: 1;
+	width: 20em;
+	height: 2em;
+}
+.mat {
+	margin: 1.5em 0;
+	grid-column: span 2;
+}
+.mat input {
+	margin-top: 0.5em;
+	margin-right: 3em;
+
+} */
 
 
 @media (max-width: 422px) {
