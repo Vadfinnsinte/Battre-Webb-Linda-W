@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="alla-dagar.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+
+	<header class="header">
+		<nav>
+			<a class="active" href="index.html">Startsida</a>
+		</nav>
+		<div class="dropdown">
+			<a href="#">Biljetter</a>
+			<nav class="hidden-nav">
+				<a href="#">Alla dagar</a>
+				<a href="#">Dagspass</a>
+			</nav>
+		</div>
+		<div class="dropdown">
+			<a href="seminarie.html">Seminarier</a>
+			<nav class="hidden-nav">
+				<a href="seminarie.html#sem1">Tillgänglighet</a>
+				<a href="seminarie.html#sem2">Nya verktyg inom HTML, CSS och JavaScript</a>
+				<a href="seminarie.html#sem3">Skapa Tillgänglig UX/UI Design</a>
+				<a href="seminarie.html#sem4">Optimering av Webbsidor för Högre Prestanda</a>
+				<a href="seminarie.html#sem5">Mötande av Utmaningar och Möjligheter</a>
+				<a href="seminarie.html#sem6">Frontend-Arkitektur: Bästa Praxis och Avancerade Koncept</a>
+				<a href="seminarie.html#sem7">Användarcentrerad Design i Frontend</a>
+				<a href="seminarie.html#sem8">Trender och Teknologier</a>
+				<a href="seminarie.html#sem9">Framgångsrik UX Design</a>
+				<a href="seminarie.html#sem10">Konsten att Skapa Användarvänliga Formulär</a>
+			</nav>
+		</div>
+		<nav>
+			<a href="#">Kontakt</a>
+		</nav>
+	</header>
+</head>
+<body>
+	<main>
+		<div class="rubrik">	
+			<h1>Biljett för alla dagar</h1>
+			<h2>20 till 23 September</h2>
+		</div>
+		<form class="form">
+			<div class="info-p">
+				<p>Fyll i informationen och klicka sedan på boka.</p>
+			</div>
+		
+			<section class="info">
+				<label for="Förnamn">*Förnamn:</label>
+				<input id="Förnamn" type="text" placeholder="ex.Johan">
+			</section>
+			<section class="info">
+				<label for="efternamn">*Efternamn:</label>
+				<input class="flex" id="efternamn" type="text" placeholder="ex.Johansson">
+			</section>
+			<section class="info">
+				<label for="e-post">*Mailadress:</label>
+				<input class="flex" id="e-post" type="text" placeholder="ex.exempel@exempel.se">
+			</section>
+			<section class="info">
+				<label for="nummer">*Telefon:</label>
+				<input class="flex" id="nummer" type="number" placeholder="ex.070-000000.se">
+			</section>
+			<section class="mat">
+				<p>*Välj ETT matalternativ:</p>
+				<label for="fisk">Fisk</label>
+				<input id="fisk" type="radio" name="mat-val" >
+
+				<label for="kött">Kött</label>
+				<input id="kött" type="radio" name="mat-val">
+
+				<label for="Vegetariskt">Vegetariskt</label>
+				<input id="Vegetariskt" type="radio" name="mat-val">
+				<label for="Veganskt">Veganskt</label>
+				<input id="Veganskt" type="radio" name="mat-val" >
+			</section>
+			<section class="info">
+				<label for="allergi">Eventuella Allergier:</label>
+				<input id="allergi" name="" placeholder="ex. gluten, laktos">
+			</section>
+			<div class="knapp">
+				<button class="boka">Boka</button>
+				<p>Information om betalning skickas till mailen</p>
+			</div>
+		</form>
+	
+		<p class="obligatorisk-text">Fält med * är obligatoriska</p>
+	</main>
+</body>
+</html>
