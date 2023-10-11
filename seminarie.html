@@ -14,7 +14,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
-	
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
 	<header class="header">
@@ -47,9 +48,30 @@
 			<a href="#">Kontakt</a>
 		</nav>
 	</header>
-<main>
 
+	<aside class="sidebar">
+		<input type="checkbox" id="hide">
+		<label for="hide" class="hamburgare">
+			<i class='bx bx-menu' id="menu-icon"></i>
+			<i class='bx bx-x' id="close-icon"></i>
+		</label>
+		<nav class="nav-meny">
+			<a href="#sem1">Tillgänglighet</a>
+			<a href="#sem2">Nya verktyg inom HTML, CSS och JavaScript</a>
+			<a href="#sem3">Skapa Tillgänglig UX/UI Design</a>
+			<a href="#sem4">Optimering av Webbsidor för Högre Prestanda</a>
+			<a href="#sem5">Mötande av Utmaningar och Möjligheter</a>
+			<a href="#sem6">Frontend-Arkitektur: Bästa Praxis och Avancerade Koncept</a>
+			<a href="#sem7">Användarcentrerad Design i Frontend</a>
+			<a href="#sem8">Trender och Teknologier</a>
+			<a href="#sem9">Framgångsrik UX Design</a>
+			<a href="#sem10">Konsten att Skapa Användarvänliga Formulär</a>
+		</nav>
+	</aside> 
+<main>
+	
 	<div class="seminarie">
+	
 		<section id="sem1">
 			<h1>Tillgänglighet</h1><h3>Med Johan Mattsson</h3> <img class="img-headshot" src="sem1.jpg" alt="Bild av johan mattsson">
 			<p>Seminariet om tillgänglighet inom frontend-utveckling behandlar vikten av att skapa webbplatser och webbapplikationer som är tillgängliga för alla användare, inklusive personer med olika funktionsnedsättningar.</p><p>Under seminariet diskuterar vi följande: Tillgänglihetsstandarder, vanliga problem, testning och validering, fördelar och implementering av ARIA.</p> 
@@ -111,5 +133,6 @@
 		</section>
 	</div>
 </main>
+
 </body>
 </html>

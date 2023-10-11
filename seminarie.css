@@ -21,6 +21,7 @@ body {
 	font-size: 18px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
+	/* position: fixed; */
 	
 }
 
@@ -49,6 +50,52 @@ body {
 	font-weight: 700;
 	
 }
+/* sidebar börjar */
+
+ #hide {
+	display: none;
+}
+#close-icon {
+	display: none;
+}
+.sidebar {
+	 position: fixed;
+	 opacity: 95%;
+}
+.hamburgare {
+	margin-left: 10px;
+	font-size: 2em;
+	position: fixed;
+
+}
+.nav-meny {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	background-color: #b89dce;
+	padding: 2em;
+	display: none;
+
+}
+.nav-meny a {
+	margin: 0.5em;
+}
+.nav-meny a:hover {
+	color: #270742;
+	font-weight: bolder;
+	font-size: 18px;
+}
+#hide:checked + label + .nav-meny {
+	display: flex;
+}
+#hide:checked ~ .hamburgare #menu-icon {
+	display: none;
+}
+#hide:checked ~ .hamburgare #close-icon {
+	display: flex;
+}
+
+
 /* Seminarie sidan börjar */
 
 .seminarie {
@@ -57,12 +104,12 @@ body {
 	flex-direction: column; */
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 3em;
+	/* grid-template-areas: "aside main"; */
+	gap: 2em;
 	align-items: center;
 	justify-content: center;
 	margin: 2em;
 }
-
 .seminarie > * {
 	/* border: 2px solid #270742; */
 	align-items: center;
@@ -71,6 +118,7 @@ body {
 	padding: 2em;
 	border-radius: 10px;
 	box-shadow: 2px 3px 10px #270742;
+	margin-left: 1em;
 }
 .img-headshot {
 	width: 10vw;
@@ -87,9 +135,7 @@ body {
 		flex-direction: column;
 		flex-grow: 1;
 	}
-	.sidebar {
-		display: none;
-	}
+	
 }
 
 @media (max-width: 422px) {
