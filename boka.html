@@ -48,22 +48,80 @@
 		</nav>
 	</header>
 	<main>
-		<section class="boka">
-			<div>
-				<img>
-				<h1>Biljett för alla dagar</h1>
-				<h2>20 till 23 September</h2>
-				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus esse alias aut officia magni, exercitationem porro odio eligendi adipisci, eos facere! Eum, culpa ex incidunt porro ullam omnis similique possimus!</p>
-				<a href="#">Till Anmälan</a>
+		<form class="form">
+			<div class="info-biljett">
+				<h1>Boka din biljett</h1>
+				<h3>20 till 22 September</h3>
+				<p>Här kan du boka din biljett till en bättre webb.</p>
+				<p>Med vår mångsidiga konferensbiljett har du friheten att skräddarsy din konferensupplevelse. Biljetten inkluderar tillgång till alla konferensaktiviteter.</p>
+				<p>Detta ingår i biljetten:</p>
+				<ul>
+					<li>Deltagardagar: Välj de dagar som passar dig bäst. Du kan delta på konferensen en, två, eller alla tre dagar.</li>
+					<li>Inkluderad Mat: Njut av måltider som är särskilt utformade för att ge energi och smakupplevelser under hela konferensen. Från utsökta luncher till fikapauser med läckra mellanmål - maten ingår i biljetten.</li>
+					<li>Kunskap och Nätverkande: Få tillgång till inspirerande talare, intressanta workshops, och möjligheter att nätverka med andra deltagare.</li>						<li>Flexibilitet: Anpassa din konferensupplevelse efter dina behov och tidsbegränsningar. Välj de dagar som fungerar bäst för dig.</li>
+				</ul>
+
 			</div>
-			<div>
-				<img>
-				<h1>Dagspass</h1>
-				<h2>Välj en dag som passar dig.</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim earum rem rerum aperiam necessitatibus incidunt inventore maiores, doloremque minima in molestiae exercitationem, cum, explicabo placeat ut eligendi id! Sapiente, repellendus!</p>
-				<a href="#">Till Anmälan</a>
+			<div class="info-p">
+				<p>Fyll i informationen och klicka sedan på boka.</p>
 			</div>
-		</section>
+			
+			<section class="info">
+				<label for="förnamn">*Förnamn:</label>
+				<input class="flex" id="förnamn" type="text" placeholder="ex.Johan" required >
+				<img class="in-valid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAW5JREFUSEvFVYFtwzAMoy9Ze8nWS7pesu6S9ZO1l6yfeGAsCbJjRwaGYEaDpLAsihIlJ+y80s7+EQJk4A3AK8qbzxPAXd6PVL6HawiQgQOAL3G65YOAp1SAV6sLkIEPAFex5sEbgCVaASaTFwDvKIEsNgn4bBFWAI3za++QOhGwswtmZV8ByIEfcUDam/l1QGT0LUwu/lwLQCMadyPPQKbTtPzq5Zg/E3DUXTPMJZ8samXg3QQArAUD5NvYewAt7DDvWwAMxLEwHx6A0ZMFc0jVrNYEgNbinoCTpLP4yQCLS3rHkaYnAHiefizNnsGfASTQSggeQBU0lOcEAxUKm+7SpigscjQYoyJbs3gdz8pU0qNZMKH4FPnhZhRnAXLpIabIFFSlSCJQFfDvUK6dLlb23Kpq2Gt5LRSNN4dd01xd+x4AWfgJqRfMQy4aOqINLyEd18Ng/ufCcWOYkeqj1ya3jVU00sM7OdJ+tL87wC8Ek4kZUT7wOAAAAABJRU5ErkJggg=="/><img class="valid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANRJREFUSEvtlEEOwiAURAdIjMeoxzBs6smsJ1FP4sp4DY5hagBDGyISKCDtwqTdlrxX5k8/wcIPWZiPVZBMeI1oiGj7QCMVa19cXvzMqiMa4JqdiUYL6K7n6uRKqgTfcIiey91sN8iBG9lPN8iFTwo2d3qkVF2fewj32iXwqMDAAdIBEJTKg5WUwqMCA1KK3QA0VmIOf9oSHmjot47OwJdoAjFWMR+eHLInMeeDVZxaSMkWORKEep7adkmBXQV+m1Jg+z5LkAsrGnINdLZdlPMR/x/RGzR9ahk4hLBXAAAAAElFTkSuQmCC"/>
+			</section>
+			<section class="info">
+				<label for="efternamn">*Efternamn:</label>
+				<input class="flex" id="efternamn" type="text" placeholder="ex.Johansson" required pattern="[A-Öa-ö ]+"><img class="in-valid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAW5JREFUSEvFVYFtwzAMoy9Ze8nWS7pesu6S9ZO1l6yfeGAsCbJjRwaGYEaDpLAsihIlJ+y80s7+EQJk4A3AK8qbzxPAXd6PVL6HawiQgQOAL3G65YOAp1SAV6sLkIEPAFex5sEbgCVaASaTFwDvKIEsNgn4bBFWAI3za++QOhGwswtmZV8ByIEfcUDam/l1QGT0LUwu/lwLQCMadyPPQKbTtPzq5Zg/E3DUXTPMJZ8samXg3QQArAUD5NvYewAt7DDvWwAMxLEwHx6A0ZMFc0jVrNYEgNbinoCTpLP4yQCLS3rHkaYnAHiefizNnsGfASTQSggeQBU0lOcEAxUKm+7SpigscjQYoyJbs3gdz8pU0qNZMKH4FPnhZhRnAXLpIabIFFSlSCJQFfDvUK6dLlb23Kpq2Gt5LRSNN4dd01xd+x4AWfgJqRfMQy4aOqINLyEd18Ng/ufCcWOYkeqj1ya3jVU00sM7OdJ+tL87wC8Ek4kZUT7wOAAAAABJRU5ErkJggg=="/><img class="valid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANRJREFUSEvtlEEOwiAURAdIjMeoxzBs6smsJ1FP4sp4DY5hagBDGyISKCDtwqTdlrxX5k8/wcIPWZiPVZBMeI1oiGj7QCMVa19cXvzMqiMa4JqdiUYL6K7n6uRKqgTfcIiey91sN8iBG9lPN8iFTwo2d3qkVF2fewj32iXwqMDAAdIBEJTKg5WUwqMCA1KK3QA0VmIOf9oSHmjot47OwJdoAjFWMR+eHLInMeeDVZxaSMkWORKEep7adkmBXQV+m1Jg+z5LkAsrGnINdLZdlPMR/x/RGzR9ahk4hLBXAAAAAElFTkSuQmCC"/>
+					
+			</section>
+			<section class="info">
+				<label for="e-post">*Mailadress:</label>
+				<input class="flex" id="e-post" type="email" placeholder="ex.exempel@exempel.se" required><img class="in-valid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAW5JREFUSEvFVYFtwzAMoy9Ze8nWS7pesu6S9ZO1l6yfeGAsCbJjRwaGYEaDpLAsihIlJ+y80s7+EQJk4A3AK8qbzxPAXd6PVL6HawiQgQOAL3G65YOAp1SAV6sLkIEPAFex5sEbgCVaASaTFwDvKIEsNgn4bBFWAI3za++QOhGwswtmZV8ByIEfcUDam/l1QGT0LUwu/lwLQCMadyPPQKbTtPzq5Zg/E3DUXTPMJZ8samXg3QQArAUD5NvYewAt7DDvWwAMxLEwHx6A0ZMFc0jVrNYEgNbinoCTpLP4yQCLS3rHkaYnAHiefizNnsGfASTQSggeQBU0lOcEAxUKm+7SpigscjQYoyJbs3gdz8pU0qNZMKH4FPnhZhRnAXLpIabIFFSlSCJQFfDvUK6dLlb23Kpq2Gt5LRSNN4dd01xd+x4AWfgJqRfMQy4aOqINLyEd18Ng/ufCcWOYkeqj1ya3jVU00sM7OdJ+tL87wC8Ek4kZUT7wOAAAAABJRU5ErkJggg=="/><img class="valid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANRJREFUSEvtlEEOwiAURAdIjMeoxzBs6smsJ1FP4sp4DY5hagBDGyISKCDtwqTdlrxX5k8/wcIPWZiPVZBMeI1oiGj7QCMVa19cXvzMqiMa4JqdiUYL6K7n6uRKqgTfcIiey91sN8iBG9lPN8iFTwo2d3qkVF2fewj32iXwqMDAAdIBEJTKg5WUwqMCA1KK3QA0VmIOf9oSHmjot47OwJdoAjFWMR+eHLInMeeDVZxaSMkWORKEep7adkmBXQV+m1Jg+z5LkAsrGnINdLZdlPMR/x/RGzR9ahk4hLBXAAAAAElFTkSuQmCC"/>
+			</section>
+			<section class="info">
+				<label for="nummer">*Telefon:</label>
+				<input class="flex" id="nummer" type="tel" placeholder="ex.070-000000.se" required><img class="in-valid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAW5JREFUSEvFVYFtwzAMoy9Ze8nWS7pesu6S9ZO1l6yfeGAsCbJjRwaGYEaDpLAsihIlJ+y80s7+EQJk4A3AK8qbzxPAXd6PVL6HawiQgQOAL3G65YOAp1SAV6sLkIEPAFex5sEbgCVaASaTFwDvKIEsNgn4bBFWAI3za++QOhGwswtmZV8ByIEfcUDam/l1QGT0LUwu/lwLQCMadyPPQKbTtPzq5Zg/E3DUXTPMJZ8samXg3QQArAUD5NvYewAt7DDvWwAMxLEwHx6A0ZMFc0jVrNYEgNbinoCTpLP4yQCLS3rHkaYnAHiefizNnsGfASTQSggeQBU0lOcEAxUKm+7SpigscjQYoyJbs3gdz8pU0qNZMKH4FPnhZhRnAXLpIabIFFSlSCJQFfDvUK6dLlb23Kpq2Gt5LRSNN4dd01xd+x4AWfgJqRfMQy4aOqINLyEd18Ng/ufCcWOYkeqj1ya3jVU00sM7OdJ+tL87wC8Ek4kZUT7wOAAAAABJRU5ErkJggg=="/><img class="valid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANRJREFUSEvtlEEOwiAURAdIjMeoxzBs6smsJ1FP4sp4DY5hagBDGyISKCDtwqTdlrxX5k8/wcIPWZiPVZBMeI1oiGj7QCMVa19cXvzMqiMa4JqdiUYL6K7n6uRKqgTfcIiey91sN8iBG9lPN8iFTwo2d3qkVF2fewj32iXwqMDAAdIBEJTKg5WUwqMCA1KK3QA0VmIOf9oSHmjot47OwJdoAjFWMR+eHLInMeeDVZxaSMkWORKEep7adkmBXQV+m1Jg+z5LkAsrGnINdLZdlPMR/x/RGzR9ahk4hLBXAAAAAElFTkSuQmCC"/>
+			</section>
+			<section class="mat">
+				<p>*Välj ETT matalternativ:</p>
+				<label for="fisk">Fisk</label>
+				<input id="fisk" type="radio" name="mat-val" required >
+	
+				<label for="kött">Kött</label>
+				<input id="kött" type="radio" name="mat-val" required>
+	
+				<label for="Vegetariskt">Vegetariskt</label>
+				<input id="Vegetariskt" type="radio" name="mat-val" required>
+				<label for="Veganskt">Veganskt</label>
+				<input id="Veganskt" type="radio" name="mat-val" required> 
+				<img class="in-valid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAW5JREFUSEvFVYFtwzAMoy9Ze8nWS7pesu6S9ZO1l6yfeGAsCbJjRwaGYEaDpLAsihIlJ+y80s7+EQJk4A3AK8qbzxPAXd6PVL6HawiQgQOAL3G65YOAp1SAV6sLkIEPAFex5sEbgCVaASaTFwDvKIEsNgn4bBFWAI3za++QOhGwswtmZV8ByIEfcUDam/l1QGT0LUwu/lwLQCMadyPPQKbTtPzq5Zg/E3DUXTPMJZ8samXg3QQArAUD5NvYewAt7DDvWwAMxLEwHx6A0ZMFc0jVrNYEgNbinoCTpLP4yQCLS3rHkaYnAHiefizNnsGfASTQSggeQBU0lOcEAxUKm+7SpigscjQYoyJbs3gdz8pU0qNZMKH4FPnhZhRnAXLpIabIFFSlSCJQFfDvUK6dLlb23Kpq2Gt5LRSNN4dd01xd+x4AWfgJqRfMQy4aOqINLyEd18Ng/ufCcWOYkeqj1ya3jVU00sM7OdJ+tL87wC8Ek4kZUT7wOAAAAABJRU5ErkJggg=="/><img class="valid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANRJREFUSEvtlEEOwiAURAdIjMeoxzBs6smsJ1FP4sp4DY5hagBDGyISKCDtwqTdlrxX5k8/wcIPWZiPVZBMeI1oiGj7QCMVa19cXvzMqiMa4JqdiUYL6K7n6uRKqgTfcIiey91sN8iBG9lPN8iFTwo2d3qkVF2fewj32iXwqMDAAdIBEJTKg5WUwqMCA1KK3QA0VmIOf9oSHmjot47OwJdoAjFWMR+eHLInMeeDVZxaSMkWORKEep7adkmBXQV+m1Jg+z5LkAsrGnINdLZdlPMR/x/RGzR9ahk4hLBXAAAAAElFTkSuQmCC"/>
+			</section>
+			<section class="mat" >
+				<p>*Välj vilka dagar du vill gå:</p>
+				<label for="Fredag">Fredag</label>
+				<input id="Fredag" type="checkbox" class="check">
+		
+				<label for="Lördag">Lördag</label>
+				<input id="Lördag" type="checkbox" class="check">
+	
+				<label for="Söndag">Söndag</label>
+				<input id="Söndag" type="checkbox" class="check">
+				<label for="alla-dagar">Alla dagar</label>
+				<input id="alla-dagar" type="checkbox" class="check" >
+				<img class="in-valid-c" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAW5JREFUSEvFVYFtwzAMoy9Ze8nWS7pesu6S9ZO1l6yfeGAsCbJjRwaGYEaDpLAsihIlJ+y80s7+EQJk4A3AK8qbzxPAXd6PVL6HawiQgQOAL3G65YOAp1SAV6sLkIEPAFex5sEbgCVaASaTFwDvKIEsNgn4bBFWAI3za++QOhGwswtmZV8ByIEfcUDam/l1QGT0LUwu/lwLQCMadyPPQKbTtPzq5Zg/E3DUXTPMJZ8samXg3QQArAUD5NvYewAt7DDvWwAMxLEwHx6A0ZMFc0jVrNYEgNbinoCTpLP4yQCLS3rHkaYnAHiefizNnsGfASTQSggeQBU0lOcEAxUKm+7SpigscjQYoyJbs3gdz8pU0qNZMKH4FPnhZhRnAXLpIabIFFSlSCJQFfDvUK6dLlb23Kpq2Gt5LRSNN4dd01xd+x4AWfgJqRfMQy4aOqINLyEd18Ng/ufCcWOYkeqj1ya3jVU00sM7OdJ+tL87wC8Ek4kZUT7wOAAAAABJRU5ErkJggg=="/><img class="valid-c" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANRJREFUSEvtlEEOwiAURAdIjMeoxzBs6smsJ1FP4sp4DY5hagBDGyISKCDtwqTdlrxX5k8/wcIPWZiPVZBMeI1oiGj7QCMVa19cXvzMqiMa4JqdiUYL6K7n6uRKqgTfcIiey91sN8iBG9lPN8iFTwo2d3qkVF2fewj32iXwqMDAAdIBEJTKg5WUwqMCA1KK3QA0VmIOf9oSHmjot47OwJdoAjFWMR+eHLInMeeDVZxaSMkWORKEep7adkmBXQV+m1Jg+z5LkAsrGnINdLZdlPMR/x/RGzR9ahk4hLBXAAAAAElFTkSuQmCC"/>
+			</section>
+			<section class="info">
+				<label for="allergi">Eventuella Allergier:</label>
+				<input id="allergi" name="" placeholder="ex. gluten, laktos">
+			</section>
+			<div class="knapp">
+				<button class="boka">Boka</button>
+				<p>Information om betalning skickas till mailen</p>
+			</div>
+		</form>
+		
 	</main>
 </body>
 </html>
