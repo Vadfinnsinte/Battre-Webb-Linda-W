@@ -79,7 +79,7 @@ body {
 	display: none;
 
 }
-/* details and summary  */
+
 .nav-meny a {
 	margin: 0.5em;
 }
@@ -125,7 +125,7 @@ body {
 }
 .img-headshot {
 	width: 10vw;
-	float: left;
+	float: right;
 	margin: 1em;
 }
 
