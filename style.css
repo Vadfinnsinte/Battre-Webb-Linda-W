@@ -10,7 +10,8 @@
 	--respons-text-size: 20px;
 }
 body {
-	background-color: var(--bg-color);
+	/* background-color: var(--bg-color); */
+	background-color: rgb(244, 239, 250);
 	font-family: 'Nunito', sans-serif;
 }
 
@@ -86,20 +87,23 @@ body {
 
 .start-info {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	/* grid-template-columns: repeat(2, 1fr); */
+	grid-template-columns: 1fr;
 	/* align-items: center; */
+	/* justify-content: center; */
 	margin-bottom: 4em;
+	margin-left: 2em;
 }
 
 .span-2 {
-	grid-column: span 2;
+	/* grid-column: span 2; */
 	text-align: center;
 	margin-top: 2em;
+	margin-right: 2em;
 }
 .bild-start {
 	width: 30vw;
-	margin-left: 5em;
-	margin-top: 2em;
+	float: right;
 }
 .text-start {
 	margin-right: 5em;
@@ -107,7 +111,28 @@ body {
 }
 .text-start h2 {
 	margin-bottom: 0.1em;
+	margin-left: 3em;
 }
+.praktisk-info {
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+.praktisk-info p {
+	margin-top: 0.3em;
+}
+.praktisk-info span {
+	font-weight: bolder;
+	text-decoration: underline;
+}
+.mer-info span {
+	font-weight: bolder;
+}
+.mer-info li {
+	margin: 0.4em 0.4em;
+
+}
+
+
 /* Footer börjar */
 .foot {
 	background-color: var(--text-color);
@@ -150,6 +175,16 @@ body {
 	.start-info {
 		/* background-color: aqua; */
 		grid-template-columns: minmax(300px, 1fr);
+	}
+	.text-start {
+	
+		margin-right: 2em;
+	}
+	.text-start h2 {
+		margin-left: 0;
+	}
+	.bild-start {
+		display: none;
 	}
 	.foot > * {
 		margin: 0;

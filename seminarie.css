@@ -118,7 +118,8 @@ body {
 	/* border: 2px solid #270742; */
 	align-items: center;
 	justify-content: center;
-	background-color: var(--bg-color);
+	/* background-color: var(--bg-color); */
+	background-color: rgb(244, 239, 250);
 	padding: 2em;
 	border-radius: 10px;
 	box-shadow: 2px 3px 10px #270742;
