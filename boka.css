@@ -205,8 +205,13 @@ input:valid + .in-valid {
 	}
 	.mat > * {
 		display: flex;
+		/* flex-wrap: wrap; */
 		/* background-color: aqua; */
 		font-size: var(--respons-text-size);
+	}
+	.mat img {
+		float: right; 
+
 	}
 	.mat label {
 		font-size: var(--respons-text-size);
@@ -222,9 +227,6 @@ input:valid + .in-valid {
 	.boka {
 		font-size: var(--font-size);
 		margin-top: 1em;
-	}
-	.flex {
-		float: none;
 	}
 	.foot > * {
 		margin: 0;
