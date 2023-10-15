@@ -48,8 +48,6 @@ body {
 }
 .header a:hover {
 	color: #270742;
-	/* font-weight: bolder; */
-	font-size: 18px;
 	font-weight: 700;
 	
 }

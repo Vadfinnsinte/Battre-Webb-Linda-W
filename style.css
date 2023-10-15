@@ -17,12 +17,10 @@ body {
 .header {
 	background-color: #C0A8D3;
 	padding: 1.5em;
-	/* opacity: 75%; */
 	display: flex;
 	flex-direction: row;
 	gap: 2em;
 	font-size: 18px;
-	/* width: 99vw; */
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 }
@@ -49,8 +47,6 @@ body {
 }
 .header a:hover {
 	color: #270742;
-	font-weight: bolder;
-	/* font-size: 18px; */	
 	font-weight: 700;
 }
 

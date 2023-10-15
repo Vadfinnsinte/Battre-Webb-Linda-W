@@ -29,6 +29,7 @@ body {
 
 .dropdown {
 	position: relative;
+	
 }
 .hidden-nav {
 	display: none;
@@ -210,6 +211,7 @@ input:valid + .in-valid {
 	.mat label {
 		font-size: var(--respons-text-size);
 		margin: 1.5em 0;
+
 	}
 	.mat input {
 		transform: scale(1.5);
