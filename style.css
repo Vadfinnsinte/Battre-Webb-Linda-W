@@ -12,6 +12,7 @@
 body {
 	background-color: rgb(244, 239, 250);
 	font-family: 'Nunito', sans-serif;
+	box-sizing: border-box;
 }
 
 .header {
@@ -54,6 +55,7 @@ body {
 .header a:hover {
 	color: #270742;
 	font-weight: 700;
+	text-decoration: underline;
 }
 /* hamburgemeny */
 #hide {
@@ -210,6 +212,9 @@ body {
 .foot-c {
 	margin-right: 2em;
 	text-align: end;
+}
+.foot a:hover {
+	text-decoration: underline;
 }
 
 

@@ -36,6 +36,7 @@ body {
 
 .dropdown {
 	position: relative;
+	z-index: 2;
 }
 .hidden-nav {
 	display: none;
@@ -115,6 +116,7 @@ body {
 	justify-content: center;
 	margin: 2em;
 }
+
 .seminarie > * {
 	align-items: center;
 	justify-content: center;
@@ -123,6 +125,17 @@ body {
 	border-radius: 10px;
 	box-shadow: 2px 3px 10px #270742;
 	margin-left: 1em;
+}
+.span-2 {
+	grid-column: span 2;
+	text-align: center;
+	padding: 0;
+	opacity: 75%;
+}
+.span-2 > * {
+	border-radius: 0;
+	background-color: var(--text-color);
+	color: rgb(244, 239, 250);
 }
 .img-headshot {
 	width: 10vw;
@@ -163,7 +176,9 @@ body {
 	margin-right: 2em;
 	text-align: end;
 }
-
+.foot a:hover {
+	text-decoration: underline;
+}
 
 @media (max-width: 800px) {
 	.header {
