@@ -2,7 +2,7 @@
 	text-decoration: none;
 	margin: 0;
 	box-sizing: border-box;
-	color: #270742;
+	color: var(--text-color);
 }
 :root {
 	--bg-color: #D9D9D9;
@@ -11,7 +11,7 @@
 	--respons-text-size: 20px;
 }
 body {
-	background-color: #bdaccab0;
+	background-color: var(--main-color);
 	font-family: 'Nunito', sans-serif;
 }
 
@@ -54,14 +54,14 @@ body {
 	border-radius: 1em;
 }
 .header a:hover {
-	color: #270742;
+	color: var(--text-color);
 	font-weight: 700;
 	text-decoration: underline;
 	
 }
 /* sidebar börjar */
 
- #hide {
+#hide {
 	display: none;
 }
 #close-icon {
@@ -69,7 +69,6 @@ body {
 }
 .sidebar {
 	 position: fixed;
-	 /* opacity: 95%; */
 	 z-index: 1;
 	 width: 100vw;
 }
@@ -128,7 +127,7 @@ body {
 	grid-template-columns: 1fr 1fr;
 	gap: 2em;
 	justify-content: center;
-	margin: 2em;
+	margin: 3em;
 }
 
 .seminarie > * {
@@ -138,7 +137,6 @@ body {
 	padding: 2em;
 	border-radius: 10px;
 	box-shadow: 2px 3px 10px #270742;
-	margin-left: 1em;
 }
 .dagar {
 	grid-column: span 2;
@@ -149,7 +147,6 @@ body {
 	font-weight: 400;
 }
 .dagar > * {
-	border-radius: 0;
 	background-color: var(--text-color);
 	color: rgb(244, 239, 250);
 }
@@ -203,13 +200,15 @@ body {
 	.sidebar {
 		display: block;
 	}
+	.sidebar li {
+		margin: 0.5em;
+	}
 	.ham-adress {
 		display: block;
 	}
 	.seminarie {
 		display: flex;
 		flex-direction: column;
-		flex-grow: 1;
 	}
 	.foot {
 		display: none;

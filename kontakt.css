@@ -54,7 +54,7 @@ body {
 	border-radius: 1em;
 }
 .header a:hover {
-	color: #270742;
+	color: var(--text-color);
 	font-weight: bolder;
 	font-weight: 700;
 	text-decoration: underline;
@@ -90,6 +90,7 @@ body {
 }
 .nav-meny li {
 	list-style-type: none;
+	margin: 0.5em;
 }
 .nav-meny a {
 	margin: 0.5em;
@@ -101,7 +102,7 @@ body {
 	display: none;
 }
 .nav-meny a:hover {
-	color: #270742;
+	color: var(--text-color);
 	/* font-weight: bolder; */
 	/* font-size: 18px; */
 	text-decoration: underline;
@@ -138,16 +139,14 @@ body {
 	width: 40vw;
 	height: 2em;
 	font-size: 17px;
-	border: 1px solid #270742;
+	border: 1px solid var(--text-color);
 }
 .in-valid {
 	visibility: hidden;
 }
-
 .valid {
 	visibility: hidden;	
 }
-
 input:invalid + .in-valid {
 	visibility: visible;
 }
@@ -170,10 +169,10 @@ button {
 	height: 2em;
 	font-size: 18px;
 	border: 1px solid var(--text-color);
+	border-radius: 5px;
 }
 button:hover {
 	box-shadow:  inset -2px 2px 2px var(--text-color); 
-	position: relative;
 	top: 0.2em;
 	border: 2px solid var(--text-color);
 }
@@ -224,9 +223,6 @@ button:hover {
 	.sidebar {
 		display: block;
 	}
-	.sidebar li {
-		margin: 0.5em;
-	}
 	.ham-adress {
 		display: block;
 	}
@@ -237,6 +233,9 @@ button:hover {
 		gap: 1em;
 		font-size: var(--respons-text-size);
 		align-items: center;	
+	}
+	button {
+		width: 30vw;
 	}
 	.kontakt-email input {
 		font-size: var(--respons-text-size);

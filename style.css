@@ -66,7 +66,6 @@ body {
 }
 .sidebar {
 	 position: fixed;
-	 /* opacity: 95%; */
 	 z-index: 3;
 	 display: none;
 	 width: 100vw;
@@ -82,13 +81,14 @@ body {
 .nav-meny {
 	display: flex;
 	flex-direction: column;
-	flex-grow: 1;
+	/* flex-grow: 1; */
 	background-color: #b89dce;
 	padding: 2em;
 	display: none;
 }
 .nav-meny li {
 	list-style-type: none;
+	margin: 0.5em;
 }
 .nav-meny a {
 	margin: 0.5em;
@@ -120,7 +120,7 @@ body {
 .start-sida {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	/* justify-content: center; */
 	align-items: center;
 	background-color: #b499ca;
 	position: relative;
@@ -163,12 +163,14 @@ body {
 .bild-start {
 	width: 30vw;
 	float: right;
+	margin-left: 2em;
 }
 .text-start {
 	margin-right: 5em;
 	margin-top: 2em;
 }
-.text-start h2 {
+
+.text-start h2, .text-start h4 {
 	margin-bottom: 0.1em;
 	margin-left: 3em;
 }
@@ -182,6 +184,9 @@ body {
 .praktisk-info span {
 	font-weight: bolder;
 	text-decoration: underline;
+}
+.praktisk-info .bold {
+	text-decoration: none;
 }
 .mer-info span {
 	font-weight: bolder;
@@ -235,15 +240,14 @@ body {
 	.sidebar {
 		display: block;
 	}
+
 	.ham-adress {
 		display: block;
 	}
 	.span-2 {
 		grid-column: span 1;
 	}
-	.start-info {
-		grid-template-columns: minmax(300px, 1fr);
-	}
+
 	.text-start {
 	
 		margin-right: 2em;

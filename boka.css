@@ -1,7 +1,7 @@
 * {
 	text-decoration: none;
 	margin: 0;
-	color: #270742;
+	color: var(--text-color);
 	box-sizing: border-box;
 }
 :root {
@@ -42,7 +42,6 @@ body {
 .hidden-nav a {
 	display: block;
 	margin-bottom: 0.5em;
-	
 }
 .dropdown:hover .hidden-nav {
 	display: block;
@@ -66,7 +65,6 @@ body {
 }
 .sidebar {
 	 position: fixed;
-	 /* opacity: 95%; */
 	 z-index: 3;
 	 display: none;
 	 width: 100vw;
@@ -89,6 +87,7 @@ body {
 }
 .nav-meny li {
 	list-style-type: none;
+	margin: 0.5em;
 }
 .nav-meny a {
 	margin: 0.5em;
@@ -105,7 +104,7 @@ body {
 	/* font-size: 18px; */
 	text-decoration: underline;
 }
-#hide:checked +  label + .nav-meny {
+#hide:checked + label + .nav-meny {
 	display: flex;
 }
 #hide:checked ~ .hamburgare #menu-icon {
@@ -119,8 +118,8 @@ body {
 .info-biljett h1, .info-biljett h3 {
 	text-align: center;
 }
-.info-biljett p{
-	margin: 1em 0em;
+.info-biljett p {
+	margin: 1em 0;
 }
 .form {
 	display: grid;
@@ -132,8 +131,6 @@ body {
 	gap: 2em;
 	font-size: 17px;
 	margin-bottom: 0;
-	
-	
 }
 .info-biljett{
 	grid-column: span 2;
@@ -147,47 +144,42 @@ body {
 	width: 40vw;
 	height: 2em;
 	font-size: 17px;
-	border: 2px solid #270742;
+	border: 1px solid var(--text-color);
 }
 .mat {
-	margin: 1.5em 0;
+	margin: 1em 0;
 	grid-column: span 2;
 	font-size: 17px;
 }
 .mat input {
 	margin-top: 0.5em;
-	margin-right: 3em;
+	margin-right: 2em;
 	font-size: 17px;
 }
-
 .knapp {
 	grid-area: 8;
 	margin-top: 0.5em;
 }
 .knapp p {
-	margin-top: 10px;
+	margin-top: 1.5em;
 }
 .boka {
 	font-size: 20px;
 	padding: 0.4em 4em;
 	box-shadow: -0.2em 0.2em 0.3em var(--text-color), 0.2em 0.2em 0.3em var(--text-color) ;
-	border: 1px solid #270742;
+	border: 1px solid var(--text-color);
 	border-radius: 5px;
 }
 .obligatorisk {
 	grid-column: 2;
 	grid-row: 9;
 	text-align: end;
+	font-family: 'Nunito Sans', sans-serif;
 }
 .boka:hover {
 	box-shadow: inset -0.1em 0.1em 0.2em var(--text-color);
 	border-left: 2px solid var(--text-color);
 	border-bottom: 2px solid var(--text-color); 
-}
-.obligatorisk-text {
-	margin: 0;
-	text-align: center;
-	font-family: 'Nunito Sans', sans-serif;
 }
 .in-valid {
 	visibility: hidden;
@@ -195,7 +187,6 @@ body {
 
 .valid {
 	visibility: hidden;
-	
 }
 
 input:invalid + .in-valid {
@@ -268,6 +259,7 @@ input:valid + .in-valid {
 	.sidebar {
 		display: block;
 	}
+
 	.ham-adress {
 		display: block;
 	}
@@ -282,28 +274,27 @@ input:valid + .in-valid {
 	.form input {
 		font-size: var(--respons-text-size);
 	}
+	.info input {
+		width: 80vw;
+	}
 	.mat > * {
 		display: flex;
 		font-size: var(--respons-text-size);
 	}
 	.mat img {
 		float: right; 
-
 	}
 	.mat label {
 		font-size: var(--respons-text-size);
 		margin: 1.5em 0;
-
 	}
 	.mat input {
 		transform: scale(1.5);
 	}
-	.info input {
-		width: 80vw;
-	}
 	.boka {
 		font-size: var(--font-size);
 		margin-top: 1em;
+		/* justify-content: center;	 */
 	}
 	.foot {
 		display: none;
