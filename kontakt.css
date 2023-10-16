@@ -56,8 +56,8 @@ body {
 .header a:hover {
 	color: #270742;
 	font-weight: bolder;
-	/* font-size: 18px; */
 	font-weight: 700;
+	text-decoration: underline;
 }
 /* hamburgemeny */
 #hide {
@@ -68,9 +68,9 @@ body {
 }
 .sidebar {
 	 position: fixed;
-	 opacity: 95%;
 	 z-index: 3;
 	 display: none;
+	 width: 100vw;
 }
 
 .hamburgare {
@@ -94,10 +94,17 @@ body {
 .nav-meny a {
 	margin: 0.5em;
 }
+.ham-adress {
+	margin-top: 2em;
+	text-align: end;
+	font-size: 13px;
+	display: none;
+}
 .nav-meny a:hover {
 	color: #270742;
-	font-weight: bolder;
-	font-size: 18px;
+	/* font-weight: bolder; */
+	/* font-size: 18px; */
+	text-decoration: underline;
 }
 #hide:checked +  label + .nav-meny {
 	display: flex;
@@ -217,6 +224,12 @@ button:hover {
 	.sidebar {
 		display: block;
 	}
+	.sidebar li {
+		margin: 0.5em;
+	}
+	.ham-adress {
+		display: block;
+	}
 	.kontakt-email {
 		display: flex;
 		flex-direction: column;
@@ -231,16 +244,7 @@ button:hover {
 	.info-k input {
 		width: 80vw;
 	}
-	.foot > * {
-		margin: 0;
-		font-size: 14px;
-	}
-	.logga-f {
+	.foot {
 		display: none;
-	}
-}
-@media (max-width: 422px) {
-	.header {
-		gap: 1em;
 	}
 }

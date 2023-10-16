@@ -66,9 +66,10 @@ body {
 }
 .sidebar {
 	 position: fixed;
-	 opacity: 95%;
+	 /* opacity: 95%; */
 	 z-index: 3;
 	 display: none;
+	 width: 100vw;
 }
 
 .hamburgare {
@@ -92,10 +93,18 @@ body {
 .nav-meny a {
 	margin: 0.5em;
 }
+.ham-adress {
+	margin-top: 2em;
+	text-align: end;
+	font-size: 13px;
+	display: none;
+}
 .nav-meny a:hover {
 	color: #270742;
-	font-weight: bolder;
-	font-size: 18px;
+	/* font-weight: bolder; */
+	/* font-size: 18px; */
+	text-decoration: underline;
+	
 }
 #hide:checked + label + .nav-meny {
 	display: flex;
@@ -106,6 +115,7 @@ body {
 #hide:checked ~ .hamburgare #close-icon {
 	display: flex;
 }
+
 /* Startsida börjar */
 .start-sida {
 	display: flex;
@@ -225,6 +235,9 @@ body {
 	.sidebar {
 		display: block;
 	}
+	.ham-adress {
+		display: block;
+	}
 	.span-2 {
 		grid-column: span 1;
 	}
@@ -241,14 +254,13 @@ body {
 	.bild-start {
 		display: none;
 	}
-	.foot > * {
-		margin: 0;
-		font-size: 14px;
-	}
-	.logga-f {
+	.foot {
 		display: none;
 	}
-	.start-sida p {
-		margin: 4px;
+
+}
+@media screen and (max-width: 500px) {
+	.start-sida div {
+		top: 11em;
 	}
 }

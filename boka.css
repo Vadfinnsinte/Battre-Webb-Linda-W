@@ -55,6 +55,7 @@ body {
 	color: #270742;
 	font-weight: bolder;
 	font-weight: 700;
+	text-decoration: underline;
 }
 /* hamburgemeny */
 #hide {
@@ -65,9 +66,10 @@ body {
 }
 .sidebar {
 	 position: fixed;
-	 opacity: 95%;
+	 /* opacity: 95%; */
 	 z-index: 3;
 	 display: none;
+	 width: 100vw;
 }
 
 .hamburgare {
@@ -91,10 +93,17 @@ body {
 .nav-meny a {
 	margin: 0.5em;
 }
+.ham-adress {
+	margin-top: 2em;
+	text-align: end;
+	font-size: 13px;
+	display: none;
+}
 .nav-meny a:hover {
 	color: #270742;
-	font-weight: bolder;
-	font-size: 18px;
+	/* font-weight: bolder; */
+	/* font-size: 18px; */
+	text-decoration: underline;
 }
 #hide:checked +  label + .nav-meny {
 	display: flex;
@@ -259,6 +268,9 @@ input:valid + .in-valid {
 	.sidebar {
 		display: block;
 	}
+	.ham-adress {
+		display: block;
+	}
 	.form {
 		display: flex;
 		flex-direction: column;
@@ -293,11 +305,7 @@ input:valid + .in-valid {
 		font-size: var(--font-size);
 		margin-top: 1em;
 	}
-	.foot > * {
-		margin: 0;
-		font-size: 14px;
-	}
-	.logga-f {
+	.foot {
 		display: none;
 	}
 }
