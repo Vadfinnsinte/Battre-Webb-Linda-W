@@ -25,6 +25,13 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 }
+.logga {
+	/* display: block; */
+	position: absolute;
+	right: 2em;
+	top: 0.55em;
+	height: 6vh;
+}
 
 .dropdown {
 	position: relative;
@@ -50,7 +57,56 @@ body {
 	color: #270742;
 	font-weight: 700;
 }
+/* hamburgemeny */
+#hide {
+	display: none;
+}
+#close-icon {
+	display: none;
+}
+.sidebar {
+	 position: fixed;
+	 opacity: 95%;
+	 /* margin-top: 10em; */
+	 z-index: 3;
+	 display: none;
+}
 
+.hamburgare {
+	margin-left: 10px;
+	font-size: 2em;
+	position: fixed;
+
+
+}
+.nav-meny {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	background-color: #b89dce;
+	padding: 2em;
+	display: none;
+}
+.nav-meny li {
+	list-style-type: none;
+}
+.nav-meny a {
+	margin: 0.5em;
+}
+.nav-meny a:hover {
+	color: #270742;
+	font-weight: bolder;
+	font-size: 18px;
+}
+#hide:checked + label + .nav-meny {
+	display: flex;
+}
+#hide:checked ~ .hamburgare #menu-icon {
+	display: none;
+}
+#hide:checked ~ .hamburgare #close-icon {
+	display: flex;
+}
 /* Startsida börjar */
 .start-sida {
 	display: flex;
@@ -162,13 +218,14 @@ body {
 	text-align: end;
 }
 
-@media (max-width: 422px) {
-	.header {
-		gap: 1em;
-	}
-}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+	.header {
+		display: none;
+	}
+	.sidebar {
+		display: block;
+	}
 	.span-2 {
 		grid-column: span 1;
 	}
