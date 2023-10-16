@@ -150,7 +150,10 @@ body {
 	flex-direction: row;
 	/* flex-grow: 1; */
 	justify-content: space-between;
-
+}
+.logga-f {
+	height: 4vh;
+	margin-top: 0.7em;
 }
 .foot a, .foot p {
 	color: var(--bg-color);
@@ -187,13 +190,11 @@ body {
 		margin: 0;
 		font-size: 14px;
 	}
-}
-
-@media (max-width: 422px) {
-	.header {
-		gap: 1em;
+	.logga-f {
+		display: none;
 	}
 }
+
 @media (max-width: 768px) {
 	.img-headshot {
 		display: none;

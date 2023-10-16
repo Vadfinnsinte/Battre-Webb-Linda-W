@@ -182,8 +182,10 @@ button:hover {
 	flex-direction: row;
 	/* flex-grow: 1; */
 	justify-content: space-between;
-
-
+}
+.logga-f {
+	height: 4vh;
+	margin-top: 0.7em;
 }
 .foot a, .foot p {
 	color: var(--bg-color);
@@ -226,6 +228,9 @@ button:hover {
 	.foot > * {
 		margin: 0;
 		font-size: 14px;
+	}
+	.logga-f {
+		display: none;
 	}
 }
 @media (max-width: 422px) {

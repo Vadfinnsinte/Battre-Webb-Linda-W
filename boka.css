@@ -227,6 +227,10 @@ input:valid + .in-valid {
 	justify-content: space-between;
 
 }
+.logga-f {
+	height: 4vh;
+	margin-top: 0.7em;
+}
 .foot a, .foot p {
 	color: var(--bg-color);
 }
@@ -292,9 +296,7 @@ input:valid + .in-valid {
 		margin: 0;
 		font-size: 14px;
 	}
-}
-@media (max-width: 422px) {
-	.header {
-		gap: 1em;
+	.logga-f {
+		display: none;
 	}
 }
