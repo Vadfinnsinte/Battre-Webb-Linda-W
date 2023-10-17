@@ -54,13 +54,16 @@ body {
 }
 .hidden-nav a {
 	display: block;
-	margin-bottom: 0.5em;
+	margin-bottom: 1em;
+	
 }
 .dropdown:hover .hidden-nav {
 	display: block;
 	background-color: #b89dce; 
 	padding: 0.5em;
-	width: 15em;
+	padding-top: 1em;
+	padding-right: 1em;
+	width: 21em;
 	border-radius: 1em;
 }
 .header a:hover {
@@ -69,8 +72,7 @@ body {
 	text-decoration: underline;
 	
 }
-/* sidebar börjar */
-
+/* hamburgemeny */
 #hide {
 	display: none;
 }
@@ -79,44 +81,35 @@ body {
 }
 .sidebar {
 	 position: fixed;
-	 z-index: 1;
-	 width: 100vw;
+	 z-index: 3;
+	 width: 30em;
 }
 
 .hamburgare {
 	margin-left: 10px;
 	font-size: 2em;
 	position: fixed;
-
 }
 .nav-meny {
 	display: flex;
 	flex-direction: column;
-	flex-grow: 1;
 	background-color: #b89dce;
 	padding: 2em;
 	display: none;
-
+	border-radius: 0px 10px 10px 0;
 }
-
 .nav-meny li {
 	list-style-type: none;
+	margin: 0.5em;
 }
-
 .nav-meny a {
 	margin: 0.5em;
 }
-.ham-adress {
-	margin-top: 2em;
-	text-align: end;
-	font-size: 13px;
-	display: none;
-}
+
 .nav-meny a:hover {
-	color: #270742;
-	/* font-weight: bolder; */
-	/* font-size: 18px; */
+	color: var(--text-color);
 	text-decoration: underline;
+	
 }
 #hide:checked + label + .nav-meny {
 	display: flex;
@@ -132,12 +125,11 @@ body {
 /* Seminarie sidan börjar */
 
 .seminarie {
-	margin-top: 3em;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 2em;
 	justify-content: center;
-	margin: 3em;
+	margin: 0.5em 3em;
 }
 
 .seminarie > * {
@@ -156,6 +148,8 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 }
+
+
 .dagar > * {
 	background-color: var(--text-color);
 	color: rgb(244, 239, 250);
@@ -209,7 +203,12 @@ body {
 	}
 	.sidebar {
 		display: block;
+		width: 100vw;
 	}
+	.nav-meny {
+		border-radius: 0;
+	}
+
 	.sidebar li {
 		margin: 0.5em;
 	}

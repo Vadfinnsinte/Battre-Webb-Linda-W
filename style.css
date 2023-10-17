@@ -1,7 +1,8 @@
 * {
 	text-decoration: none;
 	margin: 0;
-	color: #270742;
+	color: var(--text-color);
+	box-sizing: border-box;
 }
 :root {
 	--bg-color: #D9D9D9;
@@ -12,7 +13,6 @@
 body {
 	background-color: rgb(244, 239, 250);
 	font-family: 'Nunito', sans-serif;
-	box-sizing: border-box;
 }
 
 .header {
@@ -37,9 +37,6 @@ body {
 .seminarie {
 	width: 4.5em;
 }
-/* .kontakt {
-	width: 4em;
-} */
 
 
 .logga {
@@ -59,14 +56,16 @@ body {
 }
 .hidden-nav a {
 	display: block;
-	margin-bottom: 0.5em;
+	margin-bottom: 1em;
 	
 }
 .dropdown:hover .hidden-nav {
 	display: block;
 	background-color: #b89dce; 
+	padding-top: 1em;
 	padding: 0.5em;
-	width: 15em;
+	padding-right: 1em;
+	width: 21em;
 	border-radius: 1em;
 }
 .header a:hover {
@@ -82,8 +81,8 @@ body {
 	display: none;
 }
 .sidebar {
-	 position: fixed;
-	 z-index: 3;
+	 position: sticky;
+	 top: 0px;
 	 display: none;
 	 width: 100vw;
 }
@@ -98,7 +97,6 @@ body {
 .nav-meny {
 	display: flex;
 	flex-direction: column;
-	/* flex-grow: 1; */
 	background-color: #b89dce;
 	padding: 2em;
 	display: none;
@@ -110,16 +108,9 @@ body {
 .nav-meny a {
 	margin: 0.5em;
 }
-.ham-adress {
-	margin-top: 2em;
-	text-align: end;
-	font-size: 13px;
-	display: none;
-}
+
 .nav-meny a:hover {
 	color: #270742;
-	/* font-weight: bolder; */
-	/* font-size: 18px; */
 	text-decoration: underline;
 	
 }
@@ -137,7 +128,6 @@ body {
 .start-sida {
 	display: flex;
 	flex-direction: column;
-	/* justify-content: center; */
 	align-items: center;
 	background-color: #b499ca;
 	position: relative;
@@ -269,7 +259,7 @@ body {
 	
 		margin-right: 2em;
 	}
-	.text-start h2 {
+	.text-start h2, .text-start h4 {
 		margin-left: 0;
 	}
 	.bild-start {

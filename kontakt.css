@@ -46,7 +46,7 @@ body {
 
 .dropdown {
 	position: relative;
-	
+	z-index: 1;
 }
 .hidden-nav {
 	display: none;
@@ -54,14 +54,16 @@ body {
 }
 .hidden-nav a {
 	display: block;
-	margin-bottom: 0.5em;
+	margin-bottom: 1em;
 	
 }
 .dropdown:hover .hidden-nav {
 	display: block;
-	background-color: #b89dce; 
+	background-color: #b89dce;
 	padding: 0.5em;
-	width: 15em;
+	padding-top: 1em;
+	padding-right: 1em;
+	width: 21em;
 	border-radius: 1em;
 }
 .header a:hover {
@@ -109,16 +111,9 @@ body {
 .nav-meny a {
 	margin: 0.5em;
 }
-.ham-adress {
-	margin-top: 2em;
-	text-align: end;
-	font-size: 13px;
-	display: none;
-}
+
 .nav-meny a:hover {
 	color: var(--text-color);
-	/* font-weight: bolder; */
-	/* font-size: 18px; */
 	text-decoration: underline;
 }
 #hide:checked +  label + .nav-meny {
@@ -190,6 +185,11 @@ button:hover {
 	top: 0.2em;
 	border: 2px solid var(--text-color);
 }
+.ham-adress {
+	padding-left: 2em;
+	display: none;
+	margin-top: 1em;
+}
 .obligatorisk {
 	grid-column: 2;
 	grid-row: 6;
@@ -257,7 +257,14 @@ button:hover {
 	.info-k input {
 		width: 80vw;
 	}
+	.ham-adress {
+		display: block;
+		text-align: center;
+	}
 	.foot {
 		display: none;
+	}
+	.mail-input  {
+		margin: 2em;
 	}
 }
