@@ -99,8 +99,7 @@ body {
 	border-radius: 0px 10px 10px 0;
 }
 .nav-meny li {
-	list-style-type: none;
-	margin: 0.5em;
+	margin: 1em;
 }
 .nav-meny a {
 	margin: 0.5em;
