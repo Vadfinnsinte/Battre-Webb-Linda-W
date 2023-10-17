@@ -81,8 +81,7 @@ body {
 	display: none;
 }
 .sidebar {
-	 position: sticky;
-	 top: 0px;
+	 position: fixed;
 	 display: none;
 	 width: 100vw;
 	 z-index: 3;
