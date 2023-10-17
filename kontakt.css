@@ -24,7 +24,18 @@ body {
 	font-size: 18px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
-	
+}
+.header a {
+	display: inline-block;
+}
+.start, .kontakt {
+	width: 4em;
+}
+.boka {
+	width: 2em;
+}
+.seminarie {
+	width: 4.5em;
 }
 .logga {
 	position: absolute;
@@ -88,9 +99,12 @@ body {
 	padding: 2em;
 	display: none;
 }
-.nav-meny li {
+.nav-meny ul {
 	list-style-type: none;
+}
+.nav-meny li {
 	margin: 0.5em;
+	display: block;
 }
 .nav-meny a {
 	margin: 0.5em;

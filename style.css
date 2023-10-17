@@ -25,6 +25,23 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 }
+.header a {
+	display: inline-block;
+}
+.start, .kontakt {
+	width: 4em;
+}
+.boka {
+	width: 2em;
+}
+.seminarie {
+	width: 4.5em;
+}
+/* .kontakt {
+	width: 4em;
+} */
+
+
 .logga {
 	position: absolute;
 	right: 2em;
@@ -53,7 +70,7 @@ body {
 	border-radius: 1em;
 }
 .header a:hover {
-	color: #270742;
+	color: var(--text-color);
 	font-weight: 700;
 	text-decoration: underline;
 }
@@ -132,7 +149,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	letter-spacing: 2px;
-	text-shadow:  2px 2px 1px rgb(224, 182, 241);
+	text-shadow: inset 4px 4px 10px rgb(224, 182, 241);
 }
 .start-sida div {
 	position: absolute;

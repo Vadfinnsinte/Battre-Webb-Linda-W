@@ -25,6 +25,18 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 }
+.header a {
+	display: inline-block;
+}
+.start, .kontakt {
+	width: 4em;
+}
+.boka-h {
+	width: 2em;
+}
+.seminarie {
+	width: 4.5em;
+}
 .logga {
 	position: absolute;
 	right: 2em;
@@ -157,7 +169,7 @@ body {
 	font-size: 17px;
 }
 .knapp {
-	grid-area: 8;
+	grid-area: 9;
 	margin-top: 0.5em;
 }
 .knapp p {
@@ -172,7 +184,7 @@ body {
 }
 .obligatorisk {
 	grid-column: 2;
-	grid-row: 9;
+	grid-row: 10;
 	text-align: end;
 	font-family: 'Nunito Sans', sans-serif;
 }
@@ -278,23 +290,32 @@ input:valid + .in-valid {
 		width: 80vw;
 	}
 	.mat > * {
-		display: flex;
-		font-size: var(--respons-text-size);
+		/* display: flex;
+		font-size: var(--respons-text-size); */
 	}
+	.mat {
+		display: grid;
+		grid-template-columns: 1fr 1fr ;
+		gap: 1em;
+	}
+
 	.mat img {
 		float: right; 
+		grid-column: 2;
+		grid-row: 1;
 	}
 	.mat label {
 		font-size: var(--respons-text-size);
 		margin: 1.5em 0;
 	}
 	.mat input {
-		transform: scale(1.5);
+		width: 20px;
+		height: 20px;
+		margin-top: 1.59em;
 	}
 	.boka {
 		font-size: var(--font-size);
 		margin-top: 1em;
-		/* justify-content: center;	 */
 	}
 	.foot {
 		display: none;

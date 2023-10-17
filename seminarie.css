@@ -24,8 +24,18 @@ body {
 	font-size: 18px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
-	
-	
+}
+.header a {
+	display: inline-block;
+}
+.start, .kontakt {
+	width: 4em;
+}
+.boka {
+	width: 2em;
+}
+.seminarie-h {
+	width: 4.5em;
 }
 .logga {
 	position: absolute;

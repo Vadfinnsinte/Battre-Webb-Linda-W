@@ -19,14 +19,14 @@
 </head>
 <body>
 	<header class="header">
-		<nav>
-			<a class="active" href="index.html">Startsida</a>
+		<nav class="start">
+			<a href="index.html">Startsida</a>
 		</nav>
-		<nav>
+		<nav class="boka-h">
 			<a href="#">Boka</a>
 		</nav>
 		<div class="dropdown">
-			<a href="seminarie.html">Seminarier</a>
+			<a class="seminarie" href="seminarie.html">Seminarier</a>
 			<nav class="hidden-nav">
 				<a href="seminarie.html#sem1">-Tillgänglighet</a>
 				<a href="seminarie.html#sem2">-Nya verktyg inom HTML, CSS och JavaScript</a>
@@ -40,7 +40,7 @@
 				<a href="seminarie.html#sem10">-Konsten att skapa användarvänliga formulär</a>
 			</nav>
 		</div>
-		<nav>
+		<nav class="kontakt">
 			<a href="kontakt.html">Kontakt</a>
 		</nav>
 		<a href="index.html"><img class="logga" src="logga.png" alt="logga med en symbol ab en kon och texten, bättre webb"></a>
@@ -106,12 +106,22 @@
 					
 			</section>
 			<section class="info">
+				<label for="förnamn">*Adress:</label>
+				<input class="flex" id="förnamn" type="text" placeholder="ex.Exempelgatan 011" required pattern="[A-Öa-ö 0-9]+">
+				<img class="in-valid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAW5JREFUSEvFVYFtwzAMoy9Ze8nWS7pesu6S9ZO1l6yfeGAsCbJjRwaGYEaDpLAsihIlJ+y80s7+EQJk4A3AK8qbzxPAXd6PVL6HawiQgQOAL3G65YOAp1SAV6sLkIEPAFex5sEbgCVaASaTFwDvKIEsNgn4bBFWAI3za++QOhGwswtmZV8ByIEfcUDam/l1QGT0LUwu/lwLQCMadyPPQKbTtPzq5Zg/E3DUXTPMJZ8samXg3QQArAUD5NvYewAt7DDvWwAMxLEwHx6A0ZMFc0jVrNYEgNbinoCTpLP4yQCLS3rHkaYnAHiefizNnsGfASTQSggeQBU0lOcEAxUKm+7SpigscjQYoyJbs3gdz8pU0qNZMKH4FPnhZhRnAXLpIabIFFSlSCJQFfDvUK6dLlb23Kpq2Gt5LRSNN4dd01xd+x4AWfgJqRfMQy4aOqINLyEd18Ng/ufCcWOYkeqj1ya3jVU00sM7OdJ+tL87wC8Ek4kZUT7wOAAAAABJRU5ErkJggg==" alt="bild av error-meddelade"><img class="valid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANRJREFUSEvtlEEOwiAURAdIjMeoxzBs6smsJ1FP4sp4DY5hagBDGyISKCDtwqTdlrxX5k8/wcIPWZiPVZBMeI1oiGj7QCMVa19cXvzMqiMa4JqdiUYL6K7n6uRKqgTfcIiey91sN8iBG9lPN8iFTwo2d3qkVF2fewj32iXwqMDAAdIBEJTKg5WUwqMCA1KK3QA0VmIOf9oSHmjot47OwJdoAjFWMR+eHLInMeeDVZxaSMkWORKEep7adkmBXQV+m1Jg+z5LkAsrGnINdLZdlPMR/x/RGzR9ahk4hLBXAAAAAElFTkSuQmCC" alt="symbol av godkännt-meddelande">
+			</section>
+			<section class="info">
+				<label for="efternamn">*Post-nummer och postort :</label>
+				<input class="flex" id="efternamn" type="text" placeholder="ex.12334, Göteborg" required pattern="[A-Öa-ö 0-9 ,]+"><img class="in-valid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAW5JREFUSEvFVYFtwzAMoy9Ze8nWS7pesu6S9ZO1l6yfeGAsCbJjRwaGYEaDpLAsihIlJ+y80s7+EQJk4A3AK8qbzxPAXd6PVL6HawiQgQOAL3G65YOAp1SAV6sLkIEPAFex5sEbgCVaASaTFwDvKIEsNgn4bBFWAI3za++QOhGwswtmZV8ByIEfcUDam/l1QGT0LUwu/lwLQCMadyPPQKbTtPzq5Zg/E3DUXTPMJZ8samXg3QQArAUD5NvYewAt7DDvWwAMxLEwHx6A0ZMFc0jVrNYEgNbinoCTpLP4yQCLS3rHkaYnAHiefizNnsGfASTQSggeQBU0lOcEAxUKm+7SpigscjQYoyJbs3gdz8pU0qNZMKH4FPnhZhRnAXLpIabIFFSlSCJQFfDvUK6dLlb23Kpq2Gt5LRSNN4dd01xd+x4AWfgJqRfMQy4aOqINLyEd18Ng/ufCcWOYkeqj1ya3jVU00sM7OdJ+tL87wC8Ek4kZUT7wOAAAAABJRU5ErkJggg==" alt="bild av error-meddelade"><img class="valid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANRJREFUSEvtlEEOwiAURAdIjMeoxzBs6smsJ1FP4sp4DY5hagBDGyISKCDtwqTdlrxX5k8/wcIPWZiPVZBMeI1oiGj7QCMVa19cXvzMqiMa4JqdiUYL6K7n6uRKqgTfcIiey91sN8iBG9lPN8iFTwo2d3qkVF2fewj32iXwqMDAAdIBEJTKg5WUwqMCA1KK3QA0VmIOf9oSHmjot47OwJdoAjFWMR+eHLInMeeDVZxaSMkWORKEep7adkmBXQV+m1Jg+z5LkAsrGnINdLZdlPMR/x/RGzR9ahk4hLBXAAAAAElFTkSuQmCC" alt="symbol av godkännt-meddelande">
+					
+			</section>
+			<section class="info">
 				<label for="e-post">*Mailadress:</label>
 				<input class="flex" id="e-post" type="email" placeholder="ex.exempel@exempel.se" required><img class="in-valid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAW5JREFUSEvFVYFtwzAMoy9Ze8nWS7pesu6S9ZO1l6yfeGAsCbJjRwaGYEaDpLAsihIlJ+y80s7+EQJk4A3AK8qbzxPAXd6PVL6HawiQgQOAL3G65YOAp1SAV6sLkIEPAFex5sEbgCVaASaTFwDvKIEsNgn4bBFWAI3za++QOhGwswtmZV8ByIEfcUDam/l1QGT0LUwu/lwLQCMadyPPQKbTtPzq5Zg/E3DUXTPMJZ8samXg3QQArAUD5NvYewAt7DDvWwAMxLEwHx6A0ZMFc0jVrNYEgNbinoCTpLP4yQCLS3rHkaYnAHiefizNnsGfASTQSggeQBU0lOcEAxUKm+7SpigscjQYoyJbs3gdz8pU0qNZMKH4FPnhZhRnAXLpIabIFFSlSCJQFfDvUK6dLlb23Kpq2Gt5LRSNN4dd01xd+x4AWfgJqRfMQy4aOqINLyEd18Ng/ufCcWOYkeqj1ya3jVU00sM7OdJ+tL87wC8Ek4kZUT7wOAAAAABJRU5ErkJggg==" alt="bild av error-meddelade"><img class="valid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANRJREFUSEvtlEEOwiAURAdIjMeoxzBs6smsJ1FP4sp4DY5hagBDGyISKCDtwqTdlrxX5k8/wcIPWZiPVZBMeI1oiGj7QCMVa19cXvzMqiMa4JqdiUYL6K7n6uRKqgTfcIiey91sN8iBG9lPN8iFTwo2d3qkVF2fewj32iXwqMDAAdIBEJTKg5WUwqMCA1KK3QA0VmIOf9oSHmjot47OwJdoAjFWMR+eHLInMeeDVZxaSMkWORKEep7adkmBXQV+m1Jg+z5LkAsrGnINdLZdlPMR/x/RGzR9ahk4hLBXAAAAAElFTkSuQmCC" alt="symbol av godkännt-meddelande">
 			</section>
 			<section class="info">
 				<label for="nummer">*Telefon:</label>
-				<input class="flex" id="nummer" type="tel" placeholder="ex.070-000000.se" required  pattern="[0-9ö-ö+]+"><img class="in-valid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAW5JREFUSEvFVYFtwzAMoy9Ze8nWS7pesu6S9ZO1l6yfeGAsCbJjRwaGYEaDpLAsihIlJ+y80s7+EQJk4A3AK8qbzxPAXd6PVL6HawiQgQOAL3G65YOAp1SAV6sLkIEPAFex5sEbgCVaASaTFwDvKIEsNgn4bBFWAI3za++QOhGwswtmZV8ByIEfcUDam/l1QGT0LUwu/lwLQCMadyPPQKbTtPzq5Zg/E3DUXTPMJZ8samXg3QQArAUD5NvYewAt7DDvWwAMxLEwHx6A0ZMFc0jVrNYEgNbinoCTpLP4yQCLS3rHkaYnAHiefizNnsGfASTQSggeQBU0lOcEAxUKm+7SpigscjQYoyJbs3gdz8pU0qNZMKH4FPnhZhRnAXLpIabIFFSlSCJQFfDvUK6dLlb23Kpq2Gt5LRSNN4dd01xd+x4AWfgJqRfMQy4aOqINLyEd18Ng/ufCcWOYkeqj1ya3jVU00sM7OdJ+tL87wC8Ek4kZUT7wOAAAAABJRU5ErkJggg==" alt="bild av error-meddelade"><img class="valid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANRJREFUSEvtlEEOwiAURAdIjMeoxzBs6smsJ1FP4sp4DY5hagBDGyISKCDtwqTdlrxX5k8/wcIPWZiPVZBMeI1oiGj7QCMVa19cXvzMqiMa4JqdiUYL6K7n6uRKqgTfcIiey91sN8iBG9lPN8iFTwo2d3qkVF2fewj32iXwqMDAAdIBEJTKg5WUwqMCA1KK3QA0VmIOf9oSHmjot47OwJdoAjFWMR+eHLInMeeDVZxaSMkWORKEep7adkmBXQV+m1Jg+z5LkAsrGnINdLZdlPMR/x/RGzR9ahk4hLBXAAAAAElFTkSuQmCC" alt="symbol av godkännt-meddelande">
+				<input class="flex" id="nummer" type="tel" placeholder="ex.070-000000.se" required  pattern="[0-9+]+"><img class="in-valid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAW5JREFUSEvFVYFtwzAMoy9Ze8nWS7pesu6S9ZO1l6yfeGAsCbJjRwaGYEaDpLAsihIlJ+y80s7+EQJk4A3AK8qbzxPAXd6PVL6HawiQgQOAL3G65YOAp1SAV6sLkIEPAFex5sEbgCVaASaTFwDvKIEsNgn4bBFWAI3za++QOhGwswtmZV8ByIEfcUDam/l1QGT0LUwu/lwLQCMadyPPQKbTtPzq5Zg/E3DUXTPMJZ8samXg3QQArAUD5NvYewAt7DDvWwAMxLEwHx6A0ZMFc0jVrNYEgNbinoCTpLP4yQCLS3rHkaYnAHiefizNnsGfASTQSggeQBU0lOcEAxUKm+7SpigscjQYoyJbs3gdz8pU0qNZMKH4FPnhZhRnAXLpIabIFFSlSCJQFfDvUK6dLlb23Kpq2Gt5LRSNN4dd01xd+x4AWfgJqRfMQy4aOqINLyEd18Ng/ufCcWOYkeqj1ya3jVU00sM7OdJ+tL87wC8Ek4kZUT7wOAAAAABJRU5ErkJggg==" alt="bild av error-meddelade"><img class="valid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANRJREFUSEvtlEEOwiAURAdIjMeoxzBs6smsJ1FP4sp4DY5hagBDGyISKCDtwqTdlrxX5k8/wcIPWZiPVZBMeI1oiGj7QCMVa19cXvzMqiMa4JqdiUYL6K7n6uRKqgTfcIiey91sN8iBG9lPN8iFTwo2d3qkVF2fewj32iXwqMDAAdIBEJTKg5WUwqMCA1KK3QA0VmIOf9oSHmjot47OwJdoAjFWMR+eHLInMeeDVZxaSMkWORKEep7adkmBXQV+m1Jg+z5LkAsrGnINdLZdlPMR/x/RGzR9ahk4hLBXAAAAAElFTkSuQmCC" alt="symbol av godkännt-meddelande">
 			</section>
 			<section class="mat">
 				<p>*Välj ETT matalternativ:</p>
